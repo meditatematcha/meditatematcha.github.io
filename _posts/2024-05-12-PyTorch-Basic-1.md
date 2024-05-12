@@ -1,6 +1,11 @@
 ---
 classes: wide
 toc: true
+categories:
+  - PyTorch
+tags:
+  - PyTorch
+
 #sidebar:
 #nav: "docs"
 #layout: tag
