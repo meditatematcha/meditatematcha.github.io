@@ -3,6 +3,7 @@ classes: wide
 toc: true
 #sidebar:
 #  nav: "docs"
+layout: tag
 taxonomy: PyTorch # category name
 entries_layout: grid # list (default), grid
 ---
