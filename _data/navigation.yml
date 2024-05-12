@@ -15,7 +15,7 @@
   - title: PyTorch
     children:
       - title: "PyTorch"
-        url: /docs/PyTorch/
+        url: https://meditatematcha.github.io/PyTorch-Basics/
       - title: "Structure"
         url: /docs/structure/
       - title: "Installation"
