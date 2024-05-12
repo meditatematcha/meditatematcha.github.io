@@ -4,6 +4,7 @@ toc: true
 #sidebar:
 #  nav: "docs"
 layout: tag
+permalink: /tags/PyTorch/
 taxonomy: PyTorch # category name
 entries_layout: grid # list (default), grid
 ---
