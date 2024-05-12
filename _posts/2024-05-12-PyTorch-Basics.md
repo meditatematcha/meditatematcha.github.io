@@ -6,21 +6,20 @@ sidebar:
 ---
 
 ## PyTorch 모델로 쓰기 위한 두가지 조건. 
-class Model_Name(nn.Module):
+- class Model_Name(nn.Module):
 
-class Student(Human):
-    def __init__(self):
-        super(Student,self).__init__()
+<script src="https://gist.github.com/meditatematcha/3e01eb8e871054d74691bee2b0b0fcb5.js"></script> 
+
 자식 클래스 Student가 상속받는 부모 클래스 Human을 Student에 불러오겠다는 뜻 
 
 - super().__init__() → python 3 에서만 작동
 - super(자식 클래스,self).__init__() → python 2,3 모두 작동 /// 이 표현을 쓰도록 하자. 
 
 
-class Model_Name(nn.Module):
-    def __init__(self):
+    class Model_Name(nn.Module):
+        def __init__(self):
     
-        super(Model_Name, self).__init__() <- torch.nn.Module을 상속하고 있음 
+    super(Model_Name, self).__init__() <- torch.nn.Module을 상속하고 있음 
 
 
 
