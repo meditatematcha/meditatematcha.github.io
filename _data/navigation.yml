@@ -12,10 +12,10 @@
   #   url: /sitemap/
 
   docs:
-  - title: Getting Started
+  - title: PyTorch
     children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+      - title: "PyTorch"
+        url: /docs/PyTorch/
       - title: "Structure"
         url: /docs/structure/
       - title: "Installation"
