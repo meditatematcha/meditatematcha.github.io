@@ -1,8 +1,10 @@
 ---
 classes: wide
 toc: true
-sidebar:
-  nav: "docs"
+#sidebar:
+#  nav: "docs"
+taxonomy: PyTorch # category name
+entries_layout: grid # list (default), grid
 ---
 
 ## PyTorch 모델로 쓰기 위한 두가지 조건. 
