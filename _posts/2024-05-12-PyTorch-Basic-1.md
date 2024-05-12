@@ -1,12 +1,12 @@
 ---
 classes: wide
 toc: true
-sidebar:
+#sidebar:
 #nav: "docs"
-layout: tag
-permalink: /tags/PyTorch/
-taxonomy: PyTorch # category name
-entries_layout: grid # list (default), grid
+#layout: tag
+#permalink: /tags/PyTorch/
+#taxonomy: PyTorch # category name
+#entries_layout: grid # list (default), grid
 ---
 
 ## PyTorch Neural Network Model
