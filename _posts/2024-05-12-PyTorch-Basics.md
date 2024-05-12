@@ -10,7 +10,9 @@ entries_layout: grid # list (default), grid
 ---
 
 ## PyTorch 모델로 쓰기 위한 두가지 조건. 
-- class Model_Name(nn.Module):
+~~~
+class Model_Name(nn.Module):
+~~~
 
 <script src="https://gist.github.com/meditatematcha/3e01eb8e871054d74691bee2b0b0fcb5.js"></script> 
 
