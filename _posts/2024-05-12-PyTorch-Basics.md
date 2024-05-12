@@ -1,6 +1,8 @@
 ---
 classes: wide
 toc: true
+sidebar:
+  nav: "docs"
 ---
 
 ## PyTorch 모델로 쓰기 위한 두가지 조건. 
