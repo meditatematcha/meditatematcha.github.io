@@ -27,11 +27,16 @@ entries_layout: grid # list (default), grid
 
 
 
-interitance: 상속; 어떤 클래스를 만들 때 다른 클래스의 기능을 그대로 가지고오는 것.
+interitance (상속): 어떤 클래스를 만들 때 다른 클래스의 기능을 그대로 가지고오는 것.
 __init()__과 forward()를 override 해야한다.
-override: 재정의; torch.nn.Module(부모클래스)에서 정의한 메소드를 자식클래스에서 변경하는 것.
+override: 재정의; 부모클래스에서 정의한 메소드를 자식클래스에서 변경하는 것.
+
+torch.nn.Module(
+
+
 __init()__에서는 모델에서 사용될 module(nn.Linear, nn.Conv2d), activation function(nn.functional.relu, nn.functional.sigmoid)등을 정의한다. 
-forward()에서는 모델에서 실행되어야하는 계산을 정의한다. backward 계산은 backward()를 이용하면 PyTorch가 알아서 해주니까 forward()만 정의해주면 된다. input을 넣어서 어떤 계산을 진행하하여 output이 나올지를 정의해준다고 이해하면 됨. 
+forward()에서는 모델에서 실행되어야하는 계산을 정의한다. backward 계산은 backward()를 이용하면 PyTorch가 알아서 해주니까 forward()만 정의해주면 된다.
+input을 넣어서 어떤 계산을 진행하하여 output이 나올지를 정의해준다고 이해하면 됨. 
 
 PyTorch의 nn 라이브러리는 Neural Network의 모든 것을 포괄하는 모든 신경망 모델의 Base Class이다. 
 
