@@ -2,12 +2,9 @@
 classes: wide
 toc: true
 ---
-PyTorch 모델로 쓰기 위한 두가지 조건. 
 
-
-
+## PyTorch 모델로 쓰기 위한 두가지 조건. 
 class Model_Name(nn.Module):
-
 
 class Student(Human):
     def __init__(self):
