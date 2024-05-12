@@ -1,8 +1,8 @@
 ---
 classes: wide
 toc: true
-#sidebar:
-#  nav: "docs"
+sidebar:
+#nav: "docs"
 layout: tag
 permalink: /tags/PyTorch/
 taxonomy: PyTorch # category name
