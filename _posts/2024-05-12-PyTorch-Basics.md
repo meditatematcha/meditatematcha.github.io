@@ -10,39 +10,53 @@ entries_layout: grid # list (default), grid
 ---
 
 ## PyTorch 모델로 쓰기 위한 두가지 조건. 
+
+Every neural network is the sub-class of nn.Module
+
+### code 
 ~~~
 class Model_Name(nn.Module):
 ~~~
 
-<script src="https://gist.github.com/meditatematcha/3e01eb8e871054d74691bee2b0b0fcb5.js"></script> 
 
-자식 클래스 Student가 상속받는 부모 클래스 Human을 Student에 불러오겠다는 뜻 
 
-- super().__init__() → python 3 에서만 작동
-- super(자식 클래스,self).__init__() → python 2,3 모두 작동 /// 이 표현을 쓰도록 하자. 
 
+Inheritance 
+super 
+
+To absorb every function other classes have
+
+e.g. Parent Class : Human & Child Class: Student 
+~~~
+class Student(Human):
+    def __init__(self):
+        super(Student,self).__init__()
+~~~
+
+
+### Code
+~~~
+super().__init__() → python 3 only
+super(Child Class,self).__init__() → python 2,3  // Recommend using this expression  
+~~~
 
     class Model_Name(nn.Module):
         def __init__(self):
-    
     super(Model_Name, self).__init__() <- torch.nn.Module을 상속하고 있음 
 
+Need to override __init()__과 forward()
 
+### __init()__
+: define the  module (e.g nn.Linear, nn.Conv2d), activation function(e.g nn.functional.relu, nn.functional.sigmoid) used in the model 
 
-interitance (상속): 어떤 클래스를 만들 때 다른 클래스의 기능을 그대로 가지고오는 것.
-__init()__과 forward()를 override 해야한다.
-override: 재정의; 부모클래스에서 정의한 메소드를 자식클래스에서 변경하는 것.
+### forward()
+: define operations in the model 
+( bacward operations can be done by using backward()- do not need to define)
 
-torch.nn.Module(
-
-
-__init()__에서는 모델에서 사용될 module(nn.Linear, nn.Conv2d), activation function(nn.functional.relu, nn.functional.sigmoid)등을 정의한다. 
-forward()에서는 모델에서 실행되어야하는 계산을 정의한다. backward 계산은 backward()를 이용하면 PyTorch가 알아서 해주니까 forward()만 정의해주면 된다.
-input을 넣어서 어떤 계산을 진행하하여 output이 나올지를 정의해준다고 이해하면 됨. 
 
 PyTorch의 nn 라이브러리는 Neural Network의 모든 것을 포괄하는 모든 신경망 모델의 Base Class이다. 
 
-다른 말로, 모든 신경망 모델은 nn.Module의 subclass라고 할 수 있다. 
+
 
 nn.Module을 상속한 subclass가 신경망 모델로 사용되기 위해선 앞서 소개한 두 메소드를 override 해야한다. 
 
